@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+{{$zipname := .Zipfile}}
+{{ range .Imagenames }}
+<a title={{ . }} href="/dir/{{$zipname}}/{{ . }}">
+{{.}}
+</a>
+<br>
+{{ end }}
+</body>
+</html>

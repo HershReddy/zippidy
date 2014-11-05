@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+{{ range . }}
+<a title="{{ .Filename }}" href="/dir/{{ .Filename }}">
+	{{.Filename}}
+</a>
+<br>
+{{ end }}
+</body>
+</html>
